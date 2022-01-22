@@ -1,0 +1,545 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --font-family: Nunito sans, sans-serif;
+  --box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+body {
+  font-size: var(--font-family);
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--font-family);
+}
+
+:root {
+  --light:#00c3ff;
+}
+
+.scroll {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+}
+.scroll a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll a i {
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+body {
+  position: relative;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f6f6f6;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+header .container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header {
+  width: 50%;
+}
+header .header__logo {
+  font-size: 3rem;
+  margin: 0;
+}
+header .header strong {
+  font-size: 3rem;
+  color: #f2534d;
+}
+header .container-img {
+  width: 15%;
+}
+header .container-img > img {
+  width: 100%;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  color: #7a7a7a;
+  padding: 1rem;
+}
+.localisation__icon {
+  font-size: 1.5rem;
+}
+.localisation__city {
+  margin-left: 13px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.localisation .navigation {
+  width: 500px;
+}
+.localisation .navigation .nav {
+  display: flex;
+  justify-content: space-around;
+}
+.localisation .navigation .nav li {
+  font-size: 2rem;
+}
+.localisation .navigation .nav li a {
+  color: black;
+}
+.localisation .navigation .nav li :hover {
+  color: red;
+}
+
+.presentation {
+  background: #fafafa;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.presentation__container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+}
+.presentation__container .presentation__title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.presentation__container .presentation__text {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.presentation__container .presentation__text .mel {
+  font-size: 2rem;
+  color: #f2534d;
+}
+
+.img {
+  width: 100%;
+  height: 60vh;
+}
+.img__image {
+  margin-top: -80px;
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trucks {
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f6f6f6;
+  margin-top: -30px;
+  border-radius: 30px 30px 0 0;
+}
+.trucks__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.trucks .truck__title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5rem;
+  text-transform: uppercase;
+}
+.trucks .truck__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
+  border-radius: 20px;
+  transform: scale(1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.trucks .truck__card:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
+}
+.trucks .truck__image {
+  width: 100%;
+  height: 190px;
+}
+.trucks .truck__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.trucks .truck__block {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border-radius: 0 0 20px 20px;
+}
+.trucks .truck__block-info {
+  color: black;
+  margin-left: 20px;
+}
+.trucks .truck__block-info-name > h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.trucks .truck__block-hearth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 30px;
+}
+.trucks .truck__block .heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+.trucks .truck__block .heart-full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+.trucks .truck__block .heart-empty {
+  width: 50px;
+  position: relative;
+}
+.trucks .truck__block .heart-empty:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#horaires {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horaires__content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.horaires__content h2 {
+  font-size: 2rem;
+}
+.horaires__content p {
+  font-size: 2rem;
+}
+
+#contact {
+  width: 100%;
+  height: 400px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact__content {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mapping {
+  width: 100%;
+  height: 30vh;
+}
+.mapping h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.mapping__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mapping__container .content__mapping {
+  width: 70%;
+  height: 100%;
+}
+.mapping__container .content__mapping > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 500px) {
+  header .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header .container .header {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+  header .container .header a h1 {
+    font-size: 2rem;
+  }
+  header .container .header a h1 strong {
+    font-size: 2rem;
+  }
+  header .container-img {
+    width: 25%;
+  }
+
+  .main .localisation {
+    width: 100%;
+    height: 150px;
+  }
+  .main .localisation__icon > i {
+    display: none;
+  }
+  .main .navigation {
+    height: 100%;
+  }
+  .main .navigation .nav {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main .navigation .nav li {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .main img {
+    width: 100%;
+    height: 75%;
+  }
+  .main img__image {
+    margin-top: 70px;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main .trucks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main .trucks__cards {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+  }
+  .main .trucks__cards .truck {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main .trucks__cards .truck__card {
+    width: 100%;
+  }
+
+  #horaires .horaires__content {
+    width: 70%;
+  }
+  #horaires .horaires__content h2 {
+    font-size: 1.5rem;
+  }
+
+  .mapping__container {
+    width: 100%;
+    height: 50%;
+    background-color: red;
+  }
+  .mapping__container .content__mapping {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+  }
+  .mapping__container .content__mapping iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header .container .header {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  header .container .header a h1 {
+    font-size: 2rem;
+  }
+  header .container .header a h1 strong {
+    font-size: 2rem;
+  }
+  header .container-img {
+    width: 15%;
+  }
+
+  .main .localisation {
+    width: 100%;
+    height: 150px;
+  }
+  .main .localisation__icon > i {
+    display: none;
+  }
+  .main .navigation {
+    height: 100%;
+  }
+  .main .navigation .nav {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main .navigation .nav li {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .main img {
+    width: 100%;
+    height: 75%;
+  }
+  .main img__image {
+    margin-top: 70px;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main .trucks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .trucks__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .main .trucks__cards a {
+    display: flex;
+    justify-content: center;
+  }
+  .main .trucks__cards a .truck {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main .trucks__cards a .truck__card {
+    width: 70%;
+  }
+
+  #horaires .horaires__content {
+    width: 70%;
+  }
+  #horaires .horaires__content h2 {
+    font-size: 1.5rem;
+  }
+
+  .mapping__container {
+    width: 100%;
+    height: 30vh;
+  }
+  .mapping__container .content__mapping {
+    width: 100%;
+    height: 100%;
+  }
+  .mapping__container .content__mapping iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
